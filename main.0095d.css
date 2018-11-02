@@ -101,6 +101,12 @@ img{
 .padded__1_c_1 {
   padding: 10px;
 }
+
+.updateBanner__2A4D4 {
+  background-color: #ff6666;
+  padding: 1em;
+  text-align: center;
+}
 .hidden__27KN4 {
   display: none;
 }
@@ -127,7 +133,7 @@ img{
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
   text-align: center;
-  border: 1px solid black;
+  border: 6px solid black;
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
@@ -140,11 +146,14 @@ img{
           flex-direction: column;
   min-height: 100px;
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0px 0px 10px black, 1px 1px 1px black;
   font-family: Evogria, 'Russo One', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   -webkit-tap-highlight-color: transparent;
   margin: 5px;
   word-wrap: break-word;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 @media (max-width: 500px) {
@@ -170,16 +179,10 @@ img{
 }
 
 .name___02cv {
-  /* font-weight: bold; */
   font-size: 120%;
 }
 .nameTranslation__3F42l {
-  /* font-weight: bold; */
   font-size: 75%;
-}
-.jacket__1XAG5 {
-  /* font-weight: bold; */
-  
 }
 
 .cardFooter__1Yo3T {
@@ -209,22 +212,27 @@ img{
 
 .beginner__3qN2s {
   background-color: #6eccc4;
+  border-color: #6eccc4;
 }
 
 .basic__2ZAZY {
   background-color: #e0de5c;
+  border-color: #e0de5c;
 }
 
 .difficult__30Bhy {
   background-color: #e8715f;
+  border-color: #e8715f;
 }
 
 .expert__1ezWP {
   background-color: #72cc6e;
+  border-color: #72cc6e;
 }
 
 .challenge__123KQ {
   background-color: #cc71e8;
+  border-color: #cc71e8;
 }
 
 .vetoed__2dKV- {
