@@ -133,9 +133,8 @@ img{
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
   text-align: center;
-  border: 6px solid black;
+  border: 1px solid black;
   border-radius: 5px;
-  padding: 5px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,9 +150,11 @@ img{
   -webkit-tap-highlight-color: transparent;
   margin: 5px;
   word-wrap: break-word;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform ease 0.3s;
+  transition: -webkit-transform ease 0.3s;
+  transition: transform ease 0.3s;
+  transition: transform ease 0.3s, -webkit-transform ease 0.3s;
 }
 
 @media (max-width: 500px) {
@@ -176,6 +177,9 @@ img{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .name__1hHZ9 {
@@ -196,51 +200,54 @@ img{
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 80%;
-  padding-top: 10px;
+  padding: 5px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  border-top: 1px solid black;
 }
 
 .shockBadge__2o3NN {
   background-color: white;
-  padding: 3px;
+  border: 1px solid black;
+  padding: 1px;
   border-radius: 50%;
-  height: 1.5em;
+  height: 1em;
   min-width: 1em;
 }
 
-.beginner__3twIL {
+.beginner__3twIL .cardFooter__3YmJB {
   background-color: #6eccc4;
-  border-color: #6eccc4;
 }
 
-.basic__anBdQ {
+.basic__anBdQ .cardFooter__3YmJB {
   background-color: #e0de5c;
-  border-color: #e0de5c;
 }
 
-.difficult__iR6Q2 {
+.difficult__iR6Q2 .cardFooter__3YmJB {
   background-color: #e8715f;
-  border-color: #e8715f;
 }
 
-.expert__3ib2y {
+.expert__3ib2y .cardFooter__3YmJB {
   background-color: #72cc6e;
-  border-color: #72cc6e;
 }
 
-.challenge__v5XIZ {
+.challenge__v5XIZ .cardFooter__3YmJB {
   background-color: #cc71e8;
-  border-color: #cc71e8;
-}
-
-.vetoed__1xUXn {
-  opacity: 0.3;
 }
 
 .difficulty__3SN4f {
   text-transform: uppercase;
+}
+
+.vetoed__1xUXn {
+  opacity: 0.8;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-filter: grayscale(75%);
+          filter: grayscale(75%);
 }
 .chartList__1ww-A {
   display: -webkit-box;
@@ -253,7 +260,7 @@ img{
 }
 
 .chartList__1ww-A:not(:first-child) {
-  border-top: 1px solid darkgrey;
+  border-top: 5px solid darkgrey;
 }
 .drawings__Hi-CK {
   display: -webkit-box;
