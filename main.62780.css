@@ -121,11 +121,12 @@ img{
 
 .weights__2RRMr label {
   display: inline-block;
+  vertical-align: top;
   margin-right: 10px;
   text-align: center;
 }
 
-.weights__2RRMr input {
+.weights__2RRMr input[type="number"] {
   display: block;
 }
 .chart__1aBOj {
